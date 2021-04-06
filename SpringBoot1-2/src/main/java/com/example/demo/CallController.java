@@ -16,12 +16,11 @@ public class CallController implements ErrorController {
 
 	@Autowired
 	ExpenseRepository repository;
-
 	
 	@SuppressWarnings("unused")
 	@RequestMapping(value = "/run")
 	public Expense StringexceptionHanlder() {
-		System.out.println("run method called");
+		System.out.println("run method call");
 		Expense expense = new Expense();
 		if (expense == null)
 		{
